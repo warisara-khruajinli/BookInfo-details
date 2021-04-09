@@ -1,7 +1,7 @@
 services:
   details:
     build: .
-    image: ghcr.io/skeletonbear/bookinfo-details:dev
+    image: ghcr.io/warisara-khruajinli/bookinfo-details:dev
     ports:
       - "8080:8080"
     environment:
