@@ -1,8 +1,16 @@
 services:
-  details:
+  details-dev:
     build: .
     image: ghcr.io/warisara-khruajinli/bookinfo-details:dev
     ports:
       - "8080:8080"
-    environment:
-      SERVICE_VERSION: v1
+  details-uat:
+    build: .
+    image: ghcr.io/warisara-khruajinli/bookinfo-details:uat
+    ports:
+      - "8080:8080"
+  details-prd:
+    build: .
+    image: ghcr.io/warisara-khruajinli/bookinfo-details:prd
+    ports:
+      - "8080:8080"
